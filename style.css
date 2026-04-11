@@ -499,3 +499,10 @@ footer li {
     visibility: visible;
     transition: all .3s .2s ease;
 }
+
+.hidden {
+    visibility: hidden;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
