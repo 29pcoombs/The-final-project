@@ -506,3 +506,48 @@ footer li {
     padding: 0;
     margin: 0;
 }
+
+/* TABLE PAGE */
+
+#tablepage {
+    background-color: #170061;
+}
+#tablepage section {
+    border-bottom: 5px dotted #0369f8;
+    max-width: 90%;
+    margin: auto;
+    color: #4890f4;
+}
+
+#tablepage section .flex-item {
+    flex: 0 1  50%;
+    min-width: 0;
+}
+
+#tablepage table {
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+
+#tablepage table td, th {
+    border: 3px solid #0800fd;
+    padding: 15px;
+}
+
+#tablepage table th {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#tablepage section img {
+    border-radius: 10%;
+    border: 5px solid #0800fd;
+}
+
+#tablepage #final-section {
+    border: none;
+}
+
+#tablepage .flex-container {
+    flex-wrap: nowrap;
+}
