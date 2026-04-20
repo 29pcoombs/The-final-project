@@ -1,1 +1,148 @@
-SUPERCAR FORM
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>SUPERCARS</title>
+        <script src="https://kit.fontawesome.com/9a036acf0c.js" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+        <img id="logo" src="car-images/logo.png" alt="passionate penguin cars logo">
+        <!--Navigation Bar-->
+           <nav> 
+            <ul>
+           <li><a href="index.html">Home Page</a></li>
+           <li><a href="SupercarData.html"> Data and Facts</a></li>
+           <li><a href="SupercarGallery.html">Photo Gallery</a></li>
+           <li><a class="active" href="SupercarForm.html">Supercar Form</a></li>
+           <li><a href="Supercars.html">Supercars</a></li>
+           </ul>
+            </nav>
+        </header>
+        <!--FORM-->
+        <section id="formsection">
+        <h1>Supercar Form</h1>
+        <form action="#" method="post" id="form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name:</label>
+                <input type="text" name="full-name" placeholder="Your Full Name" id="full-name" required><br>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Your Email Address" id="email" required><br>
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="131-313-1313" id="phone"><br>
+                <label>Date:</label>
+                <input type="date" name="date" id="date"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Dream Car</legend>
+                <label for="dream-car">What is your favorite Supercar?</label>
+                <select name="make" id="dream-car">
+                    <option value="mclaren">McLaren (any)</option>
+                    <option value="ferrari">Ferrari (any)</option>
+                    <option value="corvette">Corvette (any)</option>
+                    <option value="buggati">Buggati (any)</option>
+                    <option value="lamborghini">Lamborghini (any)</option>
+                    <option value="pagani">Pagani (any)</option>
+                    <option value="porsche">Porsche (any)</option>
+                    <option value="maserati">Maserati (any)</option>
+                    <option value="koenigsegg">Koenigsegg (any)</option>
+                    <option value="rimac">Rimac (any)</option>
+                    <option value="aston-martin">Aston Martin (any)</option>
+                    <option value="other">other (specify below)</option>
+                </select><br>
+                <label for="otherCar">If you selected 'other', please type which supercar make is your favorite:</label>
+                <input type="text" id="otherCar" name="otherCar" placeholder="Your Favorite Supercar" size="50"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Colors</legend>
+                <h2 class="smallheader">If you could have a Supercar what would be some colors you would like it to be? Select colors below:</h2>
+
+                <input type="checkbox" name="red" id="red">
+                <label for="red">Red</label><br>
+
+                <input type="checkbox" name="orange" id="orange">
+                <label for="orange">Orange</label><br>
+
+                <input type="checkbox" name="yellow" id="yellow">
+                <label for="yellow">Yellow</label><br>
+
+                <input type="checkbox" name="green" id="green">
+                <label for="green">Green</label><br>
+
+                <input type="checkbox" name="blue" id="blue">
+                <label for="blue">Blue</label><br>
+
+                <input type="checkbox" name="purple" id="purple">
+                <label for="purple">Purple</label><br>
+
+                <input type="checkbox" name="pink" id="pink">
+                <label for="pink">Pink</label><br>
+
+                <input type="checkbox" name="white" id="white">
+                <label for="white">White</label><br>
+
+                <input type="checkbox" name="black" id="black">
+                <label for="black">Black</label><br>
+
+                <input type="checkbox" name="brown" id="brown">
+                <label for="brown">Brown</label><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Do you want a Supercar?</legend>
+                <h2 class="smallheader">Select if you would like a supercar or not:</h2>
+
+                <input type="radio" id="supercaryes" name="wantsupercar">
+                <label for="supercaryes">Yes (I want a supercar)</label><br>
+
+                <input type="radio" id="supercarno" name="wantsupercar">
+                <label for="supercarno">No (I do not want a supercar)</label><br>
+
+                <input type="radio" id="supercarmaybe" name="wantsupercar">
+                <label for="supercarmaybe">Maybe (depends on what supercar it is)</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Additional comments</legend>
+                <label for="comments">Is there anything about supercars you would like to share with us?</label>
+                <textarea name="comments" id="comments" rows="5" cols="80"></textarea>
+                <input type="submit" value="Submit Supercar Information" id="sumbitbtn">
+            </fieldset>
+        </form>
+        <h1 id="message" class="hidden">Thanks for your submittion!<br>We appreciate your information!</h1>
+         <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('form').classList.add('hidden');
+            document.getElementById('message').classList.remove('hidden');
+            confetti();
+        });
+    </script>
+    </section>
+        <!--FOOTER-->
+        <footer>
+            <h2>
+                Contact us
+            </h2>
+            <p>
+                Phone: 130-supercars-cool | supercarsarethebest@buysupercarsplease.com
+            </p>
+            <p>
+                The cave with penguins, penguin village, Antarctica. 13013
+            </p>
+            <ul>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+            <p>&copy;2026. All Rights Reserved. | <a href="#" target="_blank">Privacy Policy</a></p>
+        </footer>
+        </body>
+        </html>

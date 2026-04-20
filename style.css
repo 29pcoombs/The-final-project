@@ -551,3 +551,53 @@ footer li {
 #tablepage .flex-container {
     flex-wrap: nowrap;
 }
+
+/* FORMS PAGE */
+
+form {
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    border-radius: .8rem;
+    background-color: #4890f4;
+    padding: 20px;
+    border: 2px solid #170061;
+}
+
+form .smallheader {
+    margin-top: 5px;
+    margin-bottom:5px;
+    font-weight: normal;
+    font-size: .5em;
+}
+
+form legend {
+    color: #170061;
+    font-size: 2em;
+}
+
+form #sumbitbtn {
+    width: 22rem;
+    padding: .8rem;
+    font-size: 1rem;
+    background-color: #2f4af9;
+    color: #170061;
+    font-family: supercharge, supercharge-3d, sans-serif; 
+    border: 2px solid #02079a;
+    border-radius: 1rem;
+    display: block;
+    margin: auto;
+}
+
+form #sumbitbtn:hover {
+    background-color: #0031e0;
+}
+
+#formsection {
+    background-color: #0b30b4;
+}
